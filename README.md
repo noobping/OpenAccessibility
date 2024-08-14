@@ -1,4 +1,4 @@
 
-# OpenAccessibility
+# Open Accessibility
 
-Open accessibility settings in Android.
+A quick way to open the accessibility settings in Android.
