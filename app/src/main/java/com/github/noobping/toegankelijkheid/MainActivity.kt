@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
     private fun openAccessibilitySettings() {
         val talkBackIntent = Intent().apply {
             component = ComponentName(
-                "com.google.android.marvin.talkback",
-                "com.android.talkback.TalkBackPreferencesActivity"
+                "com.android.settings",
+                "com.android.settings.accessibility.AccessibilitySettings$SelectToSpeakSettingsActivity"
             )
         }
 
