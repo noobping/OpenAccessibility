@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Open Accessibility</string>
+    <string name="app_name">Accessibility</string>
+    <string name="description">Open accessibility settings</string>
 </resources>

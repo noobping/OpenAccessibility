@@ -19,6 +19,9 @@ class TileService : TileService() {
     }
 
     override fun onTileAdded() {
+        qsTile.label = getString(R.string.app_name)
+        qsTile.subtitle = getString(R.string.description)
+        qsTile.contentDescription = getString(R.string.description)
         qsTile.state = Tile.STATE_INACTIVE
         qsTile.updateTile()
     }
@@ -30,6 +33,9 @@ class TileService : TileService() {
     }
 
     override fun onStartListening() {
+        qsTile.label = getString(R.string.app_name)
+        qsTile.subtitle = getString(R.string.description)
+        qsTile.contentDescription = getString(R.string.description)
         qsTile.state = Tile.STATE_INACTIVE
         qsTile.updateTile()
     }
