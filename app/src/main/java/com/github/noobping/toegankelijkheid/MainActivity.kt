@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openAccessibilitySettings() {
-        val talkBackIntent = Intent().apply {
+        val selectToSpeakIntent = Intent().apply {
             component = ComponentName(
                 "com.android.settings",
-                "com.android.settings.accessibility.AccessibilitySettings$SelectToSpeakSettingsActivity"
+                "com.android.settings.accessibility.AccessibilitySettings\$SelectToSpeakSettingsActivity"
             )
         }
 
         try {
-            startActivity(talkBackIntent)
+            startActivity(selectToSpeakIntent)
         } catch (e: ActivityNotFoundException) {
             val accessibilityIntent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
             startActivity(accessibilityIntent)
